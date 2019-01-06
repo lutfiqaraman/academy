@@ -1,0 +1,27 @@
+<div class="page-header">    
+    <h1>User Login</h1>
+</div>
+
+<form ng-submit="main.dologin(loginData);">
+    <label for="username">User Name:</label>
+    <input class="form-control" type="text" name="username" placeholder="please enter username" ng-model="main.loginData.username">
+    <br>
+    <label for="password">Password:</label>
+    <input class="form-control" type="password" name="password" placeholder="please enter password" ng-model="main.loginData.password">
+    <br>
+    <button class="btn btn-primary">Login</button>
+    <a href="/auth/facebook" target="_blank">
+        <button type="button" class="btn btn-primary">Facebook Login</button>
+    </a>
+</form>
+
+<br>
+<div class="row show-hide-message" ng-show = "main.successMsg">
+    <div class="alert alert-success">{{ main.successMsg }}</div>
+</div>
+
+<br>
+
+<div class="row show-hide-message" ng-show = "main.errorMsg">
+    <div class="alert alert-danger">{{ main.errorMsg }}</div>
+</div>
