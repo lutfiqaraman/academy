@@ -3,11 +3,11 @@ const app = express();
 const port = process.env.port || 3000;
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
-var router = express.Router();
-var appRoutes = require('./app/routes/api')(router);
-var path = require('path');
-var passport = require('passport');
-var social = require('./app/passport/passport')(app, passport);
+const router = express.Router();
+const appRoutes = require('./app/routes/api')(router);
+const path = require('path');
+const passport = require('passport');
+const social = require('./app/passport/passport')(app, passport);
 
 app.use(morgan("dev"));
 
