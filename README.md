@@ -20,3 +20,11 @@ Technology used to do that:
   6. OAuth 2.0
   
 When a new user is successfully registered, the data is saved in a database type of 'nosql', I used mongodb. It also checked if the user is already registered or not. The app is also provide a profile access. The register form also provide a link for a fb regsiteration, I only do fb authentication as a sample, Oauth is used to do that.
+
+To run the program.
+  1. Install Nodejs and npm
+  2. clone the repository and save it inside a folder name it 'Academy' 
+  3. Open 'Command Prompt'
+  4. Type 'cd the/path/of/your/directory
+  5. Type 'npm install' to install all dependencies
+  6. Type 'nodemon server.js'
